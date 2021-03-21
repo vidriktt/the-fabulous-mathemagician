@@ -1,2 +1,3 @@
 # the-fabulous-mathemagician
-Mathemagician game
+
+Mathemagician, an interactive calculation game
