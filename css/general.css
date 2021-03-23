@@ -3,10 +3,69 @@ body {
     flex-direction: row;
     justify-content: center;
     margin-top: 10%;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 #sum {
-    font-size: 1em;
-    width: 1.3em;
+    font-size: 2rem;
+    width: 2.6rem;
+}
+
+#name {
+    color: indianred;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#input-text {
+    flex-direction: column;
+}
+
+#rounds-input {
+    flex-direction: column;
+    height: 2rem;
+    width: 5rem;
+    text-align: center;
+    margin: auto 10% auto 0;
+    font-size: 2rem;
+}
+
+.button-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button {
+    border: none;
+    color: white;
+    background-color: darkseagreen;
+    padding: 14px 28px;
+    font-size: 2rem;
+}
+
+.submit-button:hover {
+    background-color: forestgreen;
+}
+
+.game {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#problem {
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+#sum {
+    flex-direction: column;
+    height: 2rem;
+    width: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    margin: auto;
 }

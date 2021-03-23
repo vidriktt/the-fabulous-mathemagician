@@ -1,6 +1,6 @@
 {
     "name": "@vidriktt/the-fabulous-mathemagician",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Mathemagician, an interactive calculation game",
     "repository": "https://github.com/vidriktt/the-fabulous-mathemagician",
     "author": "Vidrik Toom Tabas",
@@ -11,15 +11,16 @@
         "@babel/eslint-parser": "^7.13.4",
         "@babel/plugin-proposal-object-rest-spread": "^7.13.0",
         "@babel/preset-env": "^7.13.5",
+        "@babel/preset-react": "^7.12.13",
         "@babel/register": "^7.13.0",
         "@rollup/plugin-babel": "^5.3.0",
         "@rollup/plugin-commonjs": "^17.1.0",
         "@rollup/plugin-node-resolve": "^11.2.0",
-        "chai": "^4.3.0",
-        "eslint": "^7.20.0",
+        "@rollup/plugin-replace": "^2.4.1",
+        "eslint": "^7.22.0",
         "eslint-config-google": "^0.14.0",
         "eslint-plugin-import": "^2.22.1",
-        "mocha": "^8.3.0",
+        "eslint-plugin-react": "^7.22.0",
         "postcss": "^8.2.6",
         "postcss-import": "^14.0.0",
         "rollup": "^2.39.1",
@@ -31,8 +32,12 @@
         "build": "rollup --config rollup.config.js",
         "build:watch": "rollup --config rollup.config.js --watch",
         "lint": "eslint src/",
-        "pretest": "eslint --ignore-pattern LintFail.js src/",
-        "test": "mocha",
-        "test:watch": "mocha --watch"
+        "start": "rollup --config rollup.config.js --watch --environment START_BROWSER:true",
+        "prestart": "eslint --ignore-pattern LintFail.js src/"
+    },
+    "dependencies": {
+        "prop-types": "^15.7.2",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
     }
 }
